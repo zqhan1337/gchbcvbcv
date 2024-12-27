@@ -1,0 +1,737 @@
+@import url(/assets);
+@import url(./fonts/fonts.css);
+@font-face {
+    font-family: 'medium';
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url(../assets/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    background: #03001F;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo a {
+    color: beige;
+    font-family: 'medium';
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.logo img {
+    width: 209px;
+    height: 113px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.nav a {
+    color: beige;
+    font-family: 'medium';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+
+.section_bas {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text_one .h1 {
+    color: beige;
+    font-size: 96px;
+    font-family: 'semibold';
+    font-weight: 600;
+}
+
+.text_two .h2 {
+    font-size: 50px;
+    font-family: 'regular';
+    font-weight: 400;
+    color: beige;
+    margin-top: 120px;
+    margin-left: -370px;
+}
+
+.section_bas img {
+    width: 600px;
+    height: 424px;
+}
+
+.assembly {
+    margin-top: 80px;
+}
+
+.assembly_text h1 {
+    font-size: 64px;
+    font-family: 'medium';
+    font-weight: 400;
+    color: beige;
+    margin-left: 10px;
+}
+
+.assembly_text h2 {
+    font-size: 32px;
+    font-family: 'regular';
+    font-weight: 400;
+    color: beige;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: -89px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+
+}
+
+.slide.active {
+    display: flex;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: beige;
+    font-size: 32px;
+    font-family: 'medium';
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: beige;
+    font-size: 18px;
+    font-family: 'medium';
+    font-weight: 400;
+    margin-left: 30px;
+
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 1px;
+}
+
+.next {
+    right: 1px;
+}
+
+.flights_text h1 {
+    font-size: 64px;
+    font-family: 'medium';
+    font-weight: 400;
+    color: beige;
+}
+
+.simulators {
+    margin-top: 80PX;
+}
+
+.simulators_text h1 {
+    font-size: 64px;
+    font-family: 'medium';
+    font-weight: 400;
+    color: beige;
+}
+
+.video {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+.flights_img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flights_img img {
+    width: 580px;
+    height: 385;
+}
+
+.flights_img_2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flights_img_2 img {
+    width: 580px;
+    height: 385;
+}
+
+.footer_bas {
+    margin-top: 80px;
+    background-color: #0E0341;
+}
+
+.bas {
+    display: flex;
+    justify-content: center;
+}
+
+.bas_img img {
+    width: 209px;
+    height: 100px;
+}
+
+.bas_text {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: beige;
+    display: flex;
+    flex-direction: row;
+}
+
+.bas_text h3 {
+    font-size: 20px;
+    font-family: 'semibold';
+    font-weight: 600;
+}
+
+.bas_text h4 {
+    font-size: 20px;
+    font-family: 'semibold';
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.competition_text h1 {
+    font-size: 64px;
+    font-family: 'medium';
+    font-weight: 400;
+    color: beige;
+}
+
+.competition {
+    margin-top: 80px;
+}
+
+.competition_img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.competition_img img {
+    width: 580px;
+    height: 385px;
+}
+
+.competition_img_2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.competition_img_2 img {
+    width: 580px;
+    height: 385px;
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+
+    .logo img {
+        width: 104px;
+        height: 56px;
+    }
+
+    .logo a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+    .section_bas {
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_one .h1 {
+        font-size: 50px;
+    }
+
+    .text_two .h2 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .section_bas img {
+        width: 300px;
+        height: 212px;
+        margin-left: -10px;
+    }
+
+    .assembly {
+        margin-top: -10px;
+    }
+
+    .assembly_text h1 {
+        font-size: 45px;
+    }
+
+    .assembly_text h2 {
+        font-size: 18px;
+    }
+
+    .slide {
+        margin-top: -5px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .flights {
+        margin-top: -40px;
+    }
+
+    .flights_text h1 {
+        font-size: 45px;
+    }
+
+    .flights_img {
+        flex-direction: column;
+    }
+
+    .flights_img img {
+        width: 290px;
+        height: 217px;
+        padding: 10px;
+    }
+
+    .flights_img_2 {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .flights_img_2 img {
+        width: 290px;
+        height: 217px;
+        padding: 10px;
+    }
+
+    .footer_bas {
+        margin-top: 10px;
+    }
+
+    .bas_img img {
+        width: 104px;
+        height: 56px;
+    }
+
+    .bas_text h3 {
+        font-size: 13px;
+        margin-top: -2.5px;
+    }
+
+    .bas_text h4 {
+        font-size: 9px;
+        margin-top: -2.5px;
+        margin-left: 10px;
+    }
+
+    .simulators {
+        margin-top: 10px;
+    }
+
+    .simulators_text h1 {
+        font-size: 45px;
+    }
+
+    .competition {
+        margin-top: 10px;
+    }
+
+    .competition_text h1 {
+        font-size: 38px;
+    }
+
+    .competition_img {
+        flex-direction: column;
+    }
+
+    .competition_img_2 {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .competition_img img {
+        width: 290px;
+        height: 217px;
+        padding: 10px;
+    }
+
+    .competition_img_2 img {
+        width: 290px;
+        height: 217px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav a{
+        justify-content: space-around;
+    }
+    .section_bas{
+        flex-direction: column;
+    }
+    .section_bas img{
+        width: 226px;
+        height: 160px;
+    }
+    .text_one .h1{
+        font-size: 76px;
+    }
+    .text_two .h2{
+        font-size: 20px;
+        margin-top: 95px;
+        margin-left: -210px;
+    }
+    .assembly_text h1{
+        font-size: 54px;
+    }
+    .assembly_text h2{
+        font-size: 16px;
+        text-align: center;
+    }
+     h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15Px;
+    }
+    .flights_text h1{
+        font-size: 54px;
+    }
+    .flights_img img{
+        width: 203px;
+        height: 170px;
+    }
+    .flights_img_2 img{
+        width: 203px;
+        height: 170px;
+    }
+    .bas_img img{
+        width: 170px;
+        height: 80px;
+    }
+    .bas_text h3{
+        font-size: 15px;
+    }
+    .bas_text h4{
+        font-size: 15px;
+    }
+    .simulators_text h1{
+        font-size: 54px;
+    }
+    .competition_img img{
+        width: 203px;
+        height: 170px;
+    }
+    .competition_img_2 img{
+        width: 203px;
+        height: 170px;
+    }
+    
+}
+@media (max-width: 375px) {
+    .container {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section_bas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .text_one .h1{
+        font-size: 55px;
+    }
+    .text_two .h2{
+        font-size: 29px;
+        margin-top: 22px;
+        margin-left: 16px;
+    }
+    .section_bas img{
+        width: 275px;
+        height: 200px;
+        margin-top: 10px;
+    }
+    .assembly{
+        margin-top: 30px;
+        
+    }
+    .assembly_text h1{
+        font-size: 55px;
+    }
+    .assembly_text h2{
+        font-size: 14px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .flights{
+        margin-top: 30px;
+
+    }
+    .flights_text h1{
+        font-size: 55px;
+    }
+    .flights_img{
+        flex-direction: column;
+    }
+    .flights_img img{
+        margin-top: 10px;
+        width: 352px;
+        height: 270px;
+    }
+    .flights_img_2{
+        flex-direction: column;
+    }
+    .flights_img_2 img{
+        margin-top: 10px;
+        width: 352px;
+        height: 270px;
+    }
+    .footer_bas{
+        margin-top: 30px;
+    }
+    .bas_img img{
+        width: 135px;
+        height: 65px;
+    }
+    .bas_text h3{
+        font-size: 11px;
+    }
+    .bas_text h4{
+        font-size: 11px;
+    }
+    .simulators{
+        margin-top: 30px;
+    }
+    .simulators_text h1{
+        font-size: 55px;
+    }
+    .competition_text h1{
+        font-size: 43px;
+    }
+    .competition{
+        margin-top: 30px;
+    }
+    .competition_img{
+        flex-direction: column;
+    }
+    .competition_img img{
+        margin-top: 10px;
+        width: 352px;
+        height: 270px;
+    }
+    .competition_img_2{
+        flex-direction: column;
+    }
+    .competition_img_2 img{
+        margin-top: 10px;
+        width: 352px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+    .text_one .h1{
+        font-size: 86px;
+    }
+    .text_two .h2{
+        font-size: 33px;
+        margin-top: 78px;
+        margin-left: -260px;
+    }
+    .section_bas img{
+        width: 449px;
+        height: 377px;
+    }
+    .assembly_text h1{
+        font-size: 60px;
+    }
+    .assembly_text h2{
+        font-size: 28px;
+        text-align: justify;
+    }
+    .flights_text h1{
+        font-size: 60px;
+    }
+    .flights_img{
+        flex-direction: column;
+    }
+    .flights_img img{
+        margin-top: 15px;
+    }
+    .flights_img_2{
+        flex-direction: column;
+    }
+    .flights_img_2 img{
+        margin-top: 15px;
+    }
+    .simulators_text h1{
+        font-size: 60px;
+    }
+    .competition h1{
+        font-size: 60px;
+    }
+    .competition_img{
+        flex-direction: column;
+    }
+    .competition_img img{
+        margin-top: 15px;
+    }
+    .competition_img_2{
+        flex-direction: column;
+    }
+    .competition_img_2 img{
+        margin-top: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+    .flights_img img{
+        padding: 15px;
+    }
+    .flights_img_2 img{
+        padding: 15px;
+    }
+    .competition_img_2 img{
+        padding: 15px;
+    }
+    .competition_img img{
+        padding: 15px;
+    }
+}
